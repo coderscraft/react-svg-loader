@@ -1,0 +1,29 @@
+{
+  "name": "@rcube/react-svg-loader",
+  "version": "1.0.0",
+  "description": "SVG Icon loader",
+  "main": "lib/loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production"
+  },
+  "keywords": [
+    "SVG",
+    "React",
+    "Loader",
+    "Icon"
+  ],
+  "author": "rcube",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "eslint": "^7.7.0",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
