@@ -4,6 +4,7 @@ module.exports = (env, options) => {
   return {
     entry: './src/loader.ts',
     mode: options.mode,
+    target: "node",
     module: {
       rules: [
         {
@@ -14,11 +15,18 @@ module.exports = (env, options) => {
       ],
     },
     resolve: {
-      extensions: [ '.ts' ],
+      extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
     },
     output: {
       filename: 'loader.js',
       path: path.resolve(__dirname, 'lib'),
+      libraryTarget: 'umd',
+      library: 'lib',
+      umdNamedDefine: true,
+      globalObject: 'this'
+    },
+    externals: {
+      canvas: "commonjs canvas"
     }
   }
 };
