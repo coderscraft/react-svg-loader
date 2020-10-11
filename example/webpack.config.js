@@ -19,7 +19,8 @@ module.exports = {
                   loader: path.resolve(__dirname,'../lib/loader.js'),
                   options: {
                     mapping: [
-                      { id: "amazon",  name: "Amazon" }
+                      { id: "amazon",  name: "Amazon" },
+                      { id: "angular",  name: "Angular" }
                     ],
                     defaultSetting: {
                       parseIcon: iconParser.parseIcon,
