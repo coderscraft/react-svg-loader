@@ -23,7 +23,7 @@ module.exports = {
                     ],
                     defaultSetting: {
                       parseIcon: iconParser.parseIcon,
-                      svgAttributes: []
+                      svgAttributes: [ { key: 'viewBox', value: "0 0 25 25" } ]
                     }
                   }
                 }
