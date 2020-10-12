@@ -16,7 +16,7 @@ module.exports = {
               test: /\.svg$/,
               use: [
                 {
-                  loader: path.resolve(__dirname,'../lib/loader.js'),
+                  loader: '@rcube/react-svg-loader',
                   options: {
                     mapping: [
                       { id: "amazon",  name: "Amazon" },
@@ -38,5 +38,4 @@ module.exports = {
             template : 'src/index.html'
         })
     ]
-
 }
