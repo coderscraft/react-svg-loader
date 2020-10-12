@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Amazon } from './asset/brands.svg'
+import { Amazon, Angular } from './asset/brands.svg'
 
 class App extends React.Component {
   render(){
     return(
       <div>
-        <div>Hello World</div>
-        <Amazon />
+        <Amazon style={{ width: 100, height: 100 }} />
+        <Angular style={{ width: 100, height: 100 }} />
       </div>
     )
   }

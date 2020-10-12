@@ -1,5 +1,6 @@
 var path = require('path');
 var HtmlWebpackPlugin =  require('html-webpack-plugin');
+var iconParser = require('../lib/plugins/iconParser')
 
 module.exports = {
     entry : './src/index.js',
@@ -18,8 +19,13 @@ module.exports = {
                   loader: path.resolve(__dirname,'../lib/loader.js'),
                   options: {
                     mapping: [
-                      { id: "amazon",  name: "Amazon" }
-                    ]
+                      { id: "amazon",  name: "Amazon" },
+                      { id: "angular",  name: "Angular" }
+                    ],
+                    defaultSetting: {
+                      parseIcon: iconParser.parseIcon,
+                      svgAttributes: [ { key: 'viewBox', value: "0 0 25 25" } ]
+                    }
                   }
                 }
               ]

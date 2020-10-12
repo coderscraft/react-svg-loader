@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "defaultSetting": {
+      "type": "object",
+      "properties": {
+        "parseIcon": {
+          "instanceof": "Function"
+        },
+        "svgAttributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
